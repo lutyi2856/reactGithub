@@ -1,0 +1,87 @@
+<!DOACTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style >
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .app {
+            width: 1024px;
+            background: whitesmoke;
+        }
+        .header {
+            display: flex;
+            width: 100%;
+            background: #282c34;
+            padding: 24px;
+            align-items: center;
+        }
+        .header-logo {
+            width: 64px;
+            height: 64px;
+            background: #61dafb;
+        }
+        .content {
+            height: 80vh;
+        }
+        .footer {
+            display: flex;
+            width: 100%;
+            background: gainsboro;
+            padding: 24px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        const renderApp = () => {
+            //App
+            const App = document.createElement("div")
+            App.classList.add('app')
+
+            //Header
+            const Header = document.createElement("div")
+            Header.classList.add('header')
+            //HeaderLogo
+            const HeaderLogo = document.createElement("div")
+            HeaderLogo.classList.add('header-logo')
+            HeaderLogo.innerHTML = 'Logotype here'
+
+            //Content
+            const Content = document.createElement("div")
+            Content.classList.add('content')
+
+            //Footer
+            const Footer = document.createElement("div")
+            Footer.classList.add('footer')
+            Footer.innerHTML = 'Footer here'
+
+
+            //Appends
+            Header.appendChild(HeaderLogo)
+            App.appendChild(Header)
+            App.appendChild(Content)
+            App.appendChild(Footer)
+
+            const Root = document.getElementById('root')
+            Root.appendChild(App)
+        }
+    </script>
+</head>
+<body>
+My webapp
+<button onclick="renderApp()">Render my app</button>
+<div id="root">
+
+</div>
+</body>
+
+</html>
