@@ -1,0 +1,14 @@
+.sitebar {
+    width: 35%;
+    padding: 40px 30px 0 20px;
+}
+
+.sitebar-list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sitebar-item {
+    margin-bottom: 13px;
+}

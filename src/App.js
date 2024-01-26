@@ -1,12 +1,14 @@
 import "./App.css";
 import Header from "./Header/Header";
-import Headerone from "./Header/Header1";
+import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="app-wrapper">
       <Header />
-      <Headerone />
+      <Main />
+      <Footer />
     </div>
   );
 }
