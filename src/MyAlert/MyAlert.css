@@ -1,0 +1,20 @@
+
+
+.alerta {
+    display: flex;
+    padding: 40px 60px;
+    border: 1px solid  #DED;
+}
+
+.alerta p {
+    color:  #9A9;
+}
+
+.success {
+    background-color: #EFE;
+}
+
+.error {
+    background-color: red;
+}
+
