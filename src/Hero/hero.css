@@ -1,0 +1,7 @@
+.hero {
+    background: linear-gradient(90deg, #FFFFFF 35%, rgb(234, 234, 234) 0);  
+}
+
+.hero-wrapper {
+    display: flex;
+}

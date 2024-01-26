@@ -1,9 +1,11 @@
 import "./header.css";
 const Header = () => {
   return (
-    <section className="header-container">
-      <h1>title</h1>
-    </section>
+    <header className="header">
+      <div className="container">
+        <h1 className="header-title">Title</h1>
+      </div>
+    </header>
   );
 };
 
