@@ -2,7 +2,6 @@ import { AiFillLike } from "react-icons/ai";
 import "./MyAlert.css";
 
 const MyAlert = (props) => {
-  console.log("рендер", props);
   return (
     <div className={`alerta  ${props.type}`}>
       <AiFillLike />
