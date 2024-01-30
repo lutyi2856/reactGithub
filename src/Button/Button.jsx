@@ -1,16 +1,12 @@
 import "./Button.css";
-import { SlLike } from "react-icons/sl";
+import React from "react";
 
 const Button = (props) => {
+  console.log(props);
   return (
-    <button
-      href="#"
-      onClick={() => {
-        console.log(`${props.click}`);
-      }}
-      className={`btn ${props.type}`}
-    >
-      <span>{props.title}</span>
+    <button href="#" onClick={props.action} className={`btn ${props.type}`}>
+      <span>{props.icon}</span>
+      <span onClick={props.action}>{props.title}</span>
     </button>
   );
 };
@@ -18,8 +14,6 @@ const Button = (props) => {
 Button.defaultProps = {
   title: "Подробнее",
   type: "btn-default",
-  click: "Клик",
-  icon: "",
 };
 
 export default Button;
