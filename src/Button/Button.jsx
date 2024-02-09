@@ -2,7 +2,6 @@ import "./Button.css";
 import React from "react";
 
 const Button = (props) => {
-  console.log(props);
   return (
     <button href="#" onClick={props.action} className={`btn ${props.type}`}>
       <span>{props.icon}</span>
