@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    max-width: max-content;
+    padding: 18px 45px;
+    margin: 50px 0;
+}
+
+.btn-default {
+    background-color: rgba(171, 177, 171, 0.733);
+}
+
+.primary {
+    background-color: rgb(174, 25, 232);
+    color: #fff;
+}
+
+.danger {
+    background-color: rgb(252, 5, 5);
+    color: #fff;
+}
+
+.warning {
+    background-color: rgb(251, 193, 4);
+    color: #fff;
+}
