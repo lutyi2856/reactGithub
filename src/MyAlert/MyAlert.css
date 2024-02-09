@@ -18,3 +18,7 @@
     background-color: red;
 }
 
+.warning {
+    background-color: rgb(251, 193, 4);
+    color: #fff;
+}
