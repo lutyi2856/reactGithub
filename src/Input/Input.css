@@ -1,0 +1,26 @@
+.form-todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feld-todo {
+  width: 250px;
+  padding: 15px 10px;
+  border: 1px solid rgb(51, 125, 236);
+  border-radius: 8px;
+}
+
+.add-task {
+  margin-left: 20px;
+  padding: 15px 10px;
+  background-color: rgb(51, 125, 236);
+  color: #fff;
+  border: none;
+  min-width: 120px;
+  border-radius: 8px;
+}
+
+.add-task:hover {
+  opacity: 0.6;
+}

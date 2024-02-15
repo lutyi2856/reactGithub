@@ -1,8 +1,7 @@
 import Hero from "../Hero/Hero";
 import "./main.css";
-import MyAlert from "../MyAlert/MyAlert";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <main className="main">
       <Hero />

@@ -1,5 +1,6 @@
-import Sitebar from "../Sitebar/Siterbar";
-import HeroContent from "../Hero-content/Hero-content";
+import React from "react";
+import Input from "../Input/Input";
+import Task from "../Task/Task";
 import "./hero.css";
 
 const Hero = () => {
@@ -7,8 +8,8 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <div className="hero-wrapper">
-          <Sitebar />
-          <HeroContent />
+          <h1 className="hero-title">ToDo List</h1>
+          <Input />
         </div>
       </div>
     </section>

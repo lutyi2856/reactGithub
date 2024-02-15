@@ -1,0 +1,36 @@
+.task-single {
+  width: 600px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(51, 125, 236);
+  ;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.task-wrapper {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.task-delete {
+  border: none;
+  background: none;
+}
+
+.task-delete svg {
+  width: 2em;
+  height: 2em;
+  color: red;
+}
+
+.task-delete:hover svg {
+  opacity: 0.5;
+}
+
+.task-title-cheked {
+  text-decoration: line-through;
+}
