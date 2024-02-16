@@ -16,7 +16,6 @@ const Input = (props) => {
   const myComponents = tasks.map((item, index) => {
     return <Task title={item} key={index} delete={removeTasks} />;
   });
-  console.log("2222222222");
   return (
     <div className="form-todo-list">
       <input

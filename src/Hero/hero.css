@@ -10,3 +10,9 @@
   text-align: center;
   color: rgb(51, 125, 236);
 }
+
+.catalog-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
