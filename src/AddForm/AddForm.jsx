@@ -1,27 +1,10 @@
-import React, { useRef } from "react";
-import { useState } from "react";
+import React, { forwardRef } from "react";
 import "./AddForm.css";
 
-const arrayPlus = (item, blfbla) => {
-  console.log(item, blfbla);
-  return item + " test";
-};
-
-const AddForm = () => {
-  const formRef = useRef();
-  const [isfield, setField] = useState([]);
-  const formValue = (event) => {
-    event.preventDefault();
-    let formDataProduct = new FormData(formRef.current);
-    for (const pair of formDataProduct.entries()) {
-      const formField = { [pair[0]]: pair[1] };
-      isfield.push(formField);
-    }
-    setField([isfield]);
-  };
+const AddForm = forwardRef((props, ref) => {
   return (
     <div className="wrapper-form">
-      <form onSubmit={formValue} className="add-product" ref={formRef}>
+      <form onSubmit={props.onSubmit} className="add-product" ref={ref}>
         <input
           name="title"
           type="text"
@@ -34,12 +17,16 @@ const AddForm = () => {
           className="description-feild"
           placeholder="Введите описание"
         />
-        <button type="submit" className="form-action">
+        <button
+          type="submit"
+          className="form-action"
+          // onClick={props.addProduct}
+        >
           отправить
         </button>
       </form>
     </div>
   );
-};
+});
 
 export default AddForm;
