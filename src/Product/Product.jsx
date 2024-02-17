@@ -7,13 +7,17 @@ const Product = (props) => {
   const action = () => {
     setStyle(!isStyle);
   };
+  const getClassName = () => {
+    if (isStyle) {
+      return "button-faivorite-active";
+    } else {
+      return "button-faivorite-default";
+    }
+  };
   return (
     <div className="wrapper-product">
       <div className="wrapper-product-button">
-        <button
-          className={`btn-faivorite ${isStyle ? "button-faivorite-active" : "button-faivorite-default"}`}
-          onClick={action}
-        >
+        <button className={`btn-faivorite ${getClassName()}`} onClick={action}>
           <MdOutlineFavorite className="icon-button" />
         </button>
       </div>

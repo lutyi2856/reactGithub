@@ -1,10 +1,20 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import "./AddForm.css";
 
-const AddForm = forwardRef((props, ref) => {
+const AddForm = (props) => {
+  const formRef = useRef();
+  const formValue = (event) => {
+    event.preventDefault();
+    let formDataProduct = new FormData(formRef.current);
+    const newProduct = Array.from(formDataProduct.entries()).reduce(
+      (obj, [key, value]) => ({ ...obj, [key]: value }),
+      {},
+    );
+    props.addProduct(newProduct);
+  };
   return (
     <div className="wrapper-form">
-      <form onSubmit={props.onSubmit} className="add-product" ref={ref}>
+      <form onSubmit={formValue} className="add-product" ref={formRef}>
         <input
           name="title"
           type="text"
@@ -27,6 +37,6 @@ const AddForm = forwardRef((props, ref) => {
       </form>
     </div>
   );
-});
+};
 
 export default AddForm;
